@@ -1,7 +1,6 @@
 {
   "name": "vue-find-telco",
   "version": "0.1.0",
-  "private": true,
   "description": "Find the TSP your phone number belongs to",
   "author":{
     "name":"Obba Paschal",

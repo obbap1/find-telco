@@ -103,7 +103,6 @@ export default {
      * after five numbers.
      */
     getFirstFourNumbers(e) {
-      console.log("running", e);
 
       if (isNumber(Number(e.data))) {
         //check if first 3 numbers are 070 and allow 5 digits
@@ -133,8 +132,6 @@ export default {
 
           this.resultDiv.text = TELCO;
           this.resultDiv.active = true;
-
-          console.log({ TELCO });
 
           // emit TELCO as response
           this.$emit("find-telco", TELCO);
