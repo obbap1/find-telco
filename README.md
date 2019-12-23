@@ -4,6 +4,8 @@ Selecting your Telco and then inputting your phone number can be Aaargh! because
 which TSP(Telecommunication Service Provider) owns '0903', '0803' etc. With this component, it can auto-detect the
 Telco for the user, win win.
 
+![GIF](https://res.cloudinary.com/pbaba/image/upload/v1577031557/Screen_Recording_2019-12-22_at_3.50.07_AM_yvb4ao.gif)
+
 # ✇ Usage
 
 ```
