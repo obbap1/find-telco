@@ -1,7 +1,13 @@
 {
-  "name": "app",
+  "name": "vue-find-telco",
   "version": "0.1.0",
   "private": true,
+  "description": "Find the TSP your phone number belongs to",
+  "author":{
+    "name":"Obba Paschal",
+    "email":"paschalobba@gmail.com",
+    "url":"https://twitter.com/_Obbap"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -10,8 +16,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
-    "vue": "^2.6.10",
-    "vuex": "^3.1.2"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
@@ -27,5 +32,12 @@
     "eslint-plugin-vue": "^5.0.0",
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "keywords": [
+    "vue",
+    "vue-component",
+    "TSP",
+    "Telco",
+    "phone number"
+  ]
 }

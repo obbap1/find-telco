@@ -1,29 +1,60 @@
-# app
+# 🔍 Find Telco
 
-## Project setup
-```
-npm install
-```
+Selecting your Telco and then inputting your phone number can be Aaargh! because i need to keep checking
+which TSP(Telecommunication Service Provider) owns '0903', '0803' etc. With this component, it can auto-detect the
+Telco for the user, win win.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# ✇ Usage
 
-### Compiles and minifies for production
 ```
-npm run build
+npm i --save vue-find-telco
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
+```js
+import FindTelco from "vue-find-telco";
+Vue.component("find-telco", FindTelco);
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```html
+<find-telco placeHolder="Enter your phone number" :inputStyle="myStyle">
+</find-telco>
+```
+
+## Props
+
+### `placeHolder: {String}`
+
+Defaults to 'Enter your Phone Number'. This is the text you want in the textbox.
+
+### `inputStyle: {Object}`
+
+This is the default styling for the textbox. You can modify this with this prop. <br>
+
+Defaults to: <br>
+
+```js
+{
+    "max-width": "50%",
+    padding: "5% 15%",
+    "font-size": "2rem",
+    "text-align": "center",
+    border: "1px solid #eda900"
+}
+```
+
+## Events
+To get the value of the Telco for use in your code, listen for the ***find-telco*** event, which emits the telco found from this component.
+
+```html
+<find-telco v-on:find-telco="showTelco($event)"></find-telco>
+
+<script>
+export default {
+    methods:{
+        showTelco(e) {
+            console.log(e) // Shows name of Telco
+        }
+    }
+}
+</script>
+```
